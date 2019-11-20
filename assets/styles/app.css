@@ -1,5 +1,12 @@
+html {
+    background: url('../img/nav-background.svg') no-repeat;
+    /* background-size: 200px 82px; */
+    background-size: contain;
+    z-index: 0;
+}
 body {
     font-family: 'SegoeUI', 'Segoe UI';
+   
 }
 
 /* Navigation part */
@@ -74,6 +81,14 @@ body {
 }
 
 /* Slideshow  */
+.slide-background {
+    position: relative;
+    bottom: 60px;
+    height: 150px;
+    margin-bottom: -100px;
+    background: url('../img/slide-background.svg') no-repeat bottom;
+    z-index: -1;
+}
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -130,8 +145,8 @@ body {
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
   margin: 0 10px;
   background-color: #0392cf;
   border-radius: 25%;
@@ -179,6 +194,100 @@ body {
     transition: opacity .3s ease-out;
 }
 
+/* Featured and Categories */
+.title {
+    color: #394855;
+    margin-bottom: 24px;
+}
+
+.categories-container {
+    display: inline-block;
+    padding-left: 6%;
+}
+
+.categories-container > ul {
+    padding:0;
+}
+.categories-container > ul > li {
+    list-style: none;
+    margin: 10px 10px 24px 0;
+    color: #0392CF;
+}
+
+.featured-container {
+    display: inline-block;
+    margin-left: 10%;
+    width: 55%;
+}
+.book-row {
+    display: inline-block;
+}
+
+.book-container {
+    display: inline-block;
+    width: 21%;
+    margin: 12px;
+}
+
+.books-grid {
+    margin-top: 4%;
+}
+.br{
+    width: 19%;
+    margin: 0;
+    padding: 0 4px;
+}
+.book-cover {
+    width: 90%;
+
+}
+.book-cover:hover{
+    color: #394855;
+    opacity: .7;
+    transition: opacity .3s ease-out;
+}
+.book-title {
+    color: #394855;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 16px;
+   
+
+}
+.book-price{
+    color: #0392CF;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.filter-section{
+    margin: 0 5%;
+    padding-left: 10px;
+}
+.filter-title{ 
+    font-size: 25px;
+    color: #9DADBC
+}
+.filter-active {
+    color:#0392CF;
+}
+.grid-row {
+    margin: 3% 0 0 4% ;
+}
+.load-more-container {
+    text-align: center;
+    margin: 3% 0;
+}
+.load-more-btn{
+    outline: none;
+    width: 30%;
+    height: 45px;
+    background-color: transparent;
+    border: solid 1px #0392CF;
+    border-radius: 4px;
+    color: #0392CF;
+}
 /* Supporting different screens */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
