@@ -2,8 +2,9 @@ html {
 
 }
 body {
+    position: relative;
     font-family: 'SegoeUI', 'Segoe UI';
-   
+    margin: 0;
 }
 .left-side-blue {
     background: url('../img/nav-background.svg') no-repeat;
@@ -289,6 +290,11 @@ body {
     border-radius: 4px;
     color: #0392CF;
 }
+
+
+.bottom-background {
+    height: 50px;
+}
 /* Supporting different screens */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -373,6 +379,7 @@ body {
     width: 60%;
 }
 .background-footer {
+    position: relative;
     background: url('../img/slide-background.svg') no-repeat;
     background-position: top;
 }
@@ -410,6 +417,7 @@ body {
     margin-top: 10px;
 }
 .nav-links {
+    position: relative;
     margin: 8% 6% 0 6%
 }
 
@@ -432,7 +440,46 @@ body {
     list-style: none;
     margin: 10px 0;
     color: #9DADBC;
+    cursor: pointer;
+    user-select: none;
 }
+
+.nav-link > ul > li:hover {
+    color: #717171;
+    text-decoration: underline;
+   
+}
+.bottom-background {
+    position: absolute;
+    display: inline-block;
+    right: 1px;
+    bottom: 1%;
+    background: url('../img/nav-background.svg') no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    height: 100%;
+    width:400px;
+    z-index: -1;
+
+}
+.copyright-container {
+    margin: 2% 6%;
+}
+
+.copyright-container > .right-side {
+    display: inline-block;
+    width: 48%;
+    text-align: left;
+    color: #9DADBC;
+}
+
+.copyright-container > .left-side {
+    display: inline-block;
+    width: 48%;
+    text-align: right;
+    color: #9DADBC;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
