@@ -421,9 +421,16 @@ body {
     margin: 8% 6% 0 6%
 }
 
+.social {
+    color: #394855 !important;
+    margin: 0 !important;
+    text-decoration:  none !important; 
+}
+
 .nav-link {
     display: inline-block;
     margin-left: 12%;
+    vertical-align: top;
 }
 .nav-link:first-child {
     margin-left: 0;
@@ -463,7 +470,7 @@ body {
 
 }
 .copyright-container {
-    margin: 2% 6%;
+    margin: 2% 6% 2% 8%;
 }
 
 .copyright-container > .right-side {
@@ -479,7 +486,55 @@ body {
     text-align: right;
     color: #9DADBC;
 }
+.paypal {
+    background: url('../img/paypal.svg') no-repeat;
+    height: 40px;
+    width: auto;
+}
 
+.visa {
+    background: url('../img/visa.svg') no-repeat;
+    height: 40px;
+    width: auto;
+}
+
+.youtube {
+    display: inline-block;
+    background: url('../img/youtube.svg') no-repeat;
+    height: 40px;
+    width: 40px;
+    
+}
+.twitter {
+    display: inline-block;
+    background: url('../img/twitter.svg') no-repeat;
+    height: 40px;
+    width: 40px;
+}
+.instagram {
+    display: inline-block;
+    background: url('../img/instagram.svg') no-repeat;
+    height: 40px;
+    width: 40px;
+}
+.facebook {
+    display: inline-block;
+    background: url('../img/facebook.svg') no-repeat;
+    height: 40px;
+    width: 40px;
+}
+.master-card {
+    background: url('../img/master-card.svg') no-repeat;
+    height: 40px;
+    width: auto;
+}
+
+.social-text {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
