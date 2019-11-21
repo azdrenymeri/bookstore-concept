@@ -1,12 +1,13 @@
 html {
-    background: url('../img/nav-background.svg') no-repeat;
-    /* background-size: 200px 82px; */
-    background-size: contain;
-    z-index: 0;
+
 }
 body {
     font-family: 'SegoeUI', 'Segoe UI';
    
+}
+.left-side-blue {
+    background: url('../img/nav-background.svg') no-repeat;
+    z-index: -1;
 }
 
 /* Navigation part */
@@ -297,9 +298,6 @@ body {
     }
 }
 
-/* .maps {
-    vertical-align: text-top;
-} */
 .info-container {
     position: relative;
     display: inline-block;
@@ -338,6 +336,103 @@ body {
     height: 24px;
 }
 
+.contact-container {
+    display: inline-block;
+    width: 50%;
+    margin-top: 4%;
+    margin-left: 6%;
+}
+
+.app-download-container {
+    position: absolute;
+    margin-top: 4%;
+    right: 1px;
+    /* left: 1px; */
+    display: inline-block;
+    width: 30%;
+}
+
+.contact-container > h2 {
+    color: #394855;
+}
+
+.contact-container > div {
+    color: #394855;
+    width: 76%;
+}
+
+.app-download-container > h2 {
+    color: #394855;
+}
+.app-download-container > div {
+    color: #394855;
+    margin: 16px;
+}
+
+.singup-input {
+    width: 60%;
+}
+.background-footer {
+    background: url('../img/slide-background.svg') no-repeat;
+    background-position: top;
+}
+
+.apple {
+    display: inline-block;
+    background: url('../img/apple.svg') no-repeat;
+    height: 30px;
+    width: 30px;
+}
+.android {
+    display: inline-block;
+    background: url('../img/android.svg') no-repeat;
+    height: 30px;
+    width: 30px;
+}
+
+.signup-btn {
+    color: white;
+    height: 48px;
+    width: 30%;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #0392CF;
+    outline: none;
+    border: solid 1px #9DADBC;
+    vertical-align: bottom;
+
+}
+.brand-text {
+    display: inline-block;
+    vertical-align: super;
+    margin-top: 10px;
+}
+.nav-links {
+    margin: 8% 6% 0 6%
+}
+
+.nav-link {
+    display: inline-block;
+    margin-left: 12%;
+}
+.nav-link:first-child {
+    margin-left: 0;
+}
+.nav-link > h2 {
+    color: #394855;
+}
+.nav-link > ul {
+    padding: 0;
+
+}
+.nav-link > ul > li {
+    padding: 0;
+    list-style: none;
+    margin: 10px 0;
+    color: #9DADBC;
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
