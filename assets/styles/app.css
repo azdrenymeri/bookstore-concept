@@ -297,6 +297,47 @@ body {
     }
 }
 
+/* .maps {
+    vertical-align: text-top;
+} */
+.info-container {
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    background-color: #394855;
+    color: white;
+    opacity: 0.7;
+    border-radius: 5px;
+    padding: 16px;
+    margin-left: 6%;
+    margin-top: 2%;
+    vertical-align: top;
+    z-index: 1;
+
+}
+.info-description {
+    display: inline-block;
+}
+.maps-container {
+    position: absolute;
+    right: 9%;
+    display: inline-block;
+    width: 50%;
+    height: 500px;
+    background: url('../img/map.svg') no-repeat;
+    border-radius: 5px;
+}
+.seperator {
+    display: inline-block;
+    height: 500px;
+}
+.marker {
+    display: inline-block;
+    background: url('../img/marker.svg') no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
