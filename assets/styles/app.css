@@ -96,7 +96,7 @@ body {
 /* Slideshow container */
 .slideshow-container {
   display: inline-block;
-  max-width: 76%;
+  max-width: 65%;
   position: relative;
   margin-left: 6%;
 }
@@ -108,7 +108,7 @@ body {
 }
 .slide-img{
     width: 100%;
-    height: 530px;
+    height: auto;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -184,9 +184,11 @@ body {
     margin: 0 10px 10px 5px;
     padding-bottom: 10px;
 }
-
+.side-item {
+    margin-bottom: 1%;
+}
 .side-img {
-    width: 67%;
+    width: 69%;
     height: auto;
     border-radius: 5px;
 }
@@ -291,18 +293,10 @@ body {
     color: #0392CF;
 }
 
-
 .bottom-background {
     height: 50px;
 }
-/* Supporting different screens */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
 
-    body {
-        background-color: rebeccapurple;
-    }
-}
 
 .info-container {
     position: relative;
@@ -535,25 +529,31 @@ body {
     font-size: 20px;
     
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
 
-}
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1281px) {
+  
+    body {
+        background-color: gray;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
     body {
         /* background-color: coral; */
+        color: red;
+        /* margin: 90px; */
     }
 
     .nav-left {
@@ -568,12 +568,244 @@ body {
         display: inline-block;
         margin-left: 6%;
     }
-
-}
-
-/* Largests one */
-@media only screen and (min-width: 1600px) {
-    body {
-        /* background-color: red; */
+    .slideshow-container {
+        max-width: 65%
     }
-}
+    .side-container {
+        width: 29%;
+    }
+    .side-item {
+        margin-bottom:2px;
+    }
+
+    .featured-container {
+        margin-left: 3%;
+        vertical-align: top;
+    }
+    .book-container {
+        width: 19%;
+        margin-bottom: 10px;    
+    }
+
+    .nav-link {
+        margin-left: 8%;
+    }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #bookstore-txt {
+        display: none;
+    }
+
+
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    #bookstore-txt {
+        display: none;
+    }
+    .navbar-container {
+        padding: 10px;
+    }
+
+    .nav-left {
+        margin-right: 0;
+    }
+    .nav-right {
+        margin-left: 0;
+    }
+
+    .slideshow-container {
+        max-width: 70%;
+    }
+
+    .side-item {
+        margin-bottom: 0;
+    }
+    .prev, .next {
+        top: 44%;
+    }
+    .dot {
+        height: 14px;
+        width: 14px;
+    }
+
+    .featured-container {
+        width: 80%;
+    }
+    .book-container {
+        margin: 6px;
+    }
+
+    .book-title{
+        font-size: 16px;
+    }
+    .book-price {
+        font-size: 17px;
+    }
+    .br {
+        width: 17%;
+    }
+    .info-container {
+        width: 90%;
+        height: 330px;
+        opacity: 0.6;
+    }
+    .maps-container {
+        margin-top: 35%;
+        width: 80%;
+        height: 450px;
+    }
+    .seperator{
+        height: 700px;
+    }
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+      .container {
+        margin: 0px 25px;
+      }
+      .navbar-container {
+          padding: 20px;
+      }
+    .left-side-blue {
+        background: url('../img/nav-background.svg') no-repeat;
+        background-size: 30%;
+        z-index: -1;
+    }
+    .logo {
+        height: 40px;
+        width: 40px;
+        margin-bottom: 6px;
+    }
+    .bottom-background {
+        background-size: 30%;
+    }
+    #bookstore-txt {
+        display: none;
+    }
+    .nav-left {
+        margin-right: 0;
+    }
+    .nav-right {
+        display: none;
+    }
+    .nav-search-input{
+        width: 67%;
+    }
+    .input-container > #search-icon {
+        bottom: 0;
+    }
+    .chart-icon {
+        display: none;
+    }
+    .side-container {
+        display: none;
+    }
+    .slideshow-container{
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .dot {
+        width: 12px;
+        height: 12px;
+        margin: 0 5px;
+    }
+    .featured-container {
+        width: 97%;
+        margin-left: 6%;
+    }
+
+    .book-container {
+        margin: 0;
+        width: 23%;
+    }
+
+    .book-title {
+        font-size: 15px;
+        margin-top: 0;
+    }
+    .book-price {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .info-container {
+        /* margin-left: 0; */
+    }
+    .info-container > h3 {
+        margin:0;
+    }
+    .info-description {
+        display: none;
+    }
+    .maps-container {
+        width: 76%;
+        height: 300px;
+        margin-top: 15%;
+    }
+    .seperator {
+        height: 400px;
+    }
+    .contact-container {
+        width: 100%;
+    }
+    .signup-btn {
+        font-size: 16px;
+        height: 40px;
+        margin-left: 0;
+    }
+    .app-download-container {
+        position: relative;
+        width: 100%;
+        margin-left: 6%;
+    }
+    .nav-search-input {
+        font-size: 16px;
+        height: 40px;
+    }
+    .nav-link {
+        margin-left:0;
+        width: 49%;
+    }
+    .nav-link > ul {
+        margin: 0;
+    }
+    .nav-link > h2 {
+        margin-bottom: 0;
+        /* font-size: 16px; */
+    }
+  
+    .br{
+        width: 48%;
+        margin-bottom: 4%;
+    }
+  }
